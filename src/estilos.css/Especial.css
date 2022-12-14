@@ -1,0 +1,8 @@
+/** ESPECIAL */
+.especial {
+  background: #D8BFD8;
+}
+
+.especial::before {
+  background: url(../../assets/image3.webp);
+}

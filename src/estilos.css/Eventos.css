@@ -1,0 +1,12 @@
+/** EVENTOS  */
+.eventos {
+  background: #FFBFB3;
+}
+
+.eventos::before {
+  background: url(../../assets/image5.webp);
+}
+
+.eventos .btn {
+  width: 200px;
+}

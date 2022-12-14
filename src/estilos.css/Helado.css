@@ -1,0 +1,15 @@
+/** HELADOS  */
+.helado {
+  height: 115vh;
+  background: url(../../assets/image7.webp), #e9569d;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  z-index: -1;
+}
+
+.helado img {
+  width: 100%;
+  object-fit: cover;
+
+}
