@@ -198,9 +198,9 @@ textarea {
 @media only screen and (orientation: landscape) {
 
 
-  .container1 {
+  .contenedor1 {
     width: 85%;
-    margin: 0 auto;
+    margin: 7% auto;
 
   }
 
@@ -209,8 +209,8 @@ textarea {
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    /*margin: 0 10px;*/
-    margin-top: -10px;
+    /*margin-left: -30px;*/
+    margin-top: -20px;
     margin-bottom: -10px;
   }
 
@@ -247,7 +247,7 @@ textarea {
     display: none;
   }
 
-  .contenedor_drpdown {
+  .contenedor_dropdown {
     margin-top: 10px;
     display: flex;
   }
@@ -321,7 +321,7 @@ textarea {
   .relleno {
     font-size: 1rem;
 
-    padding-right: 5px;
+    padding-right: 10px;
   }
 
 
@@ -330,13 +330,30 @@ textarea {
     font-size: .7rem;
   }
 
+  [for="nata"] {
+    padding-right: 10px;
+  }
+
+  [for="chocolate"] {
+    padding-right: 25px;
+  }
+
+  [for="oreo"] {
+    padding-right: 25px;
+  }
+
+  [for="trufa"] {
+    padding-right: 28px;
+  }
+
   #comentario_label {
     font-size: .8rem;
     font-weight: bold;
+    margin-left: 15%;
 
   }
 
   textarea {
-    margin: 0 16%;
+    margin: 0 25%;
   }
 }

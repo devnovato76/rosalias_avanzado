@@ -89,7 +89,7 @@ export const Formulario = () => {
               required={true}
             />
             <br />
-            <div className="contenedor_drpdown">
+            <div className="contenedor_dropdown">
               <label id="tipo-label" htmlFor="tipo">
                 Tipo
               </label>
