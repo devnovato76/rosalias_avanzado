@@ -182,3 +182,11 @@ textarea {
 
   }
 }
+
+@media (orientation: landscape) {
+  container1 {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+}
