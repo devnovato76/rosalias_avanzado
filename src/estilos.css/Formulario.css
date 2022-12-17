@@ -11,7 +11,7 @@
 .contenedor1 {
   display: flex;
   flex-direction: column;
-  margin: 30px auto;
+  margin: 20px auto;
   width: 60%;
   padding: 10px;
   border-radius: 10px;
@@ -38,7 +38,7 @@ fieldset {
 }
 
 textarea {
-  margin: 0 4px;
+  margin: 0 auto;
 }
 
 #nombre,
@@ -119,4 +119,66 @@ textarea {
   margin: 0 30px;
 
 
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .contenedor1 {
+    width: 550px;
+    min-width: 250px;
+
+  }
+
+  #nombre,
+  #email,
+  #phone {
+    width: 520px;
+    min-width: 240px;
+  }
+
+  #submit {
+    width: 520px;
+    min-width: 240px;
+  }
+
+  #dropdown,
+  #dropdown2 {
+    width: 520px;
+    min-width: 240px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .contenedor1 {
+    width: 700px;
+    min-width: 500px;
+
+  }
+
+  #nombre,
+  #email,
+  #phone {
+    width: 674px;
+    min-width: 480px;
+  }
+
+
+  #submit {
+    max-width: 674px;
+    min-width: 480px;
+  }
+
+  #dropdown,
+  #dropdown2 {
+    max-width: 674px;
+    min-width: 480px;
+  }
+
+  fieldset {
+
+    border: 1px solid #000;
+
+
+  }
 }

@@ -208,7 +208,7 @@ export const Formulario = () => {
               id="comentario"
               name="comentario"
               rows="12"
-              cols="100"
+              cols="60"
               defaultValue="Escribe tu Comentario"
             ></textarea>
             <br />
