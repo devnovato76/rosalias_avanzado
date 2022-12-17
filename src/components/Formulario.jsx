@@ -124,7 +124,7 @@ export const Formulario = () => {
             <br />
             <div className="caja">
               {" "}
-              <div>
+              <div className="checkbox1">
                 <label className="bizcocho">Elije un Bizcocho</label>
                 <br />
                 <input
@@ -163,7 +163,7 @@ export const Formulario = () => {
                 <label htmlFor="otro">Otro</label>
                 <br />
               </div>
-              <div>
+              <div className="checkbox1">
                 {" "}
                 <label className="relleno">Elije un Relleno</label>
                 <br />
