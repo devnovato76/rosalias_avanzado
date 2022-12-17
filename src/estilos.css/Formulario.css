@@ -244,12 +244,18 @@ textarea {
     margin: 0 auto;
     text-align: center;
     font-size: 0.8rem;
+    display: none;
+  }
+
+  .contenedor_drpdown {
+    margin-top: 10px;
+    display: flex;
   }
 
   #nombre,
   #email,
   #phone {
-    font-size: .6rem;
+    font-size: .8rem;
     height: 20px;
   }
 
@@ -258,12 +264,20 @@ textarea {
   #phone-label,
   #tipo-label,
   #tamaño-label {
-    font-size: .6rem;
+    font-size: .8rem;
     margin-top: 4px;
   }
 
   #tamaño-label {
-    margin-top: -10px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+  }
+
+  #tipo-label {
+
+    margin-right: 2px;
+
   }
 
   #dropdown,

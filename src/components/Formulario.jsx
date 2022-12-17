@@ -89,38 +89,40 @@ export const Formulario = () => {
               required={true}
             />
             <br />
-            <label id="tipo-label" htmlFor="tipo">
-              Tipo
-            </label>
-            <br />
-            <select
-              onChange={handleSelectChange}
-              id="dropdown"
-              name="tipo"
-              defaultValue="personalizada"
-            >
-              <option value="personalizada">Personalizada</option>
-              <option value="tradicional">Tradicional</option>
-              <option value="pastelitos">Pastelitos</option>
-            </select>
-            <br />
-            <br />
-            <label id="tamaño-label" htmlFor="tamanio">
-              Tamaño
-            </label>
-            <br />
-            <select
-              onChange={handleSelectChange2}
-              id="dropdown2"
-              name="tamanio"
-              defaultValue="veinte"
-            >
-              <option value="diez">10 Personas Aproximadamente</option>
-              <option value="veinte">20 Personas Aproximadamente</option>
-              <option value="treinta">30 Personas Aproximadamente</option>
-              <option value="otro">Otro</option>
-            </select>
-            <br />
+            <div className="contenedor_drpdown">
+              <label id="tipo-label" htmlFor="tipo">
+                Tipo
+              </label>
+              <br />
+              <select
+                onChange={handleSelectChange}
+                id="dropdown"
+                name="tipo"
+                defaultValue="personalizada"
+              >
+                <option value="personalizada">Personalizada</option>
+                <option value="tradicional">Tradicional</option>
+                <option value="pastelitos">Pastelitos</option>
+              </select>
+              <br />
+              <br />
+              <label id="tamaño-label" htmlFor="tamanio">
+                Tamaño
+              </label>
+              <br />
+              <select
+                onChange={handleSelectChange2}
+                id="dropdown2"
+                name="tamanio"
+                defaultValue="veinte"
+              >
+                <option value="diez">10 Personas Aproximadamente</option>
+                <option value="veinte">20 Personas Aproximadamente</option>
+                <option value="treinta">30 Personas Aproximadamente</option>
+                <option value="otro">Otro</option>
+              </select>
+              <br />
+            </div>
             <br />
             <div className="caja">
               {" "}
