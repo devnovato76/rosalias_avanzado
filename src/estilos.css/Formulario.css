@@ -175,19 +175,33 @@ textarea {
     min-width: 480px;
   }
 
-  fieldset {
-
-    border: 1px solid #000;
-
-
+  #chocolate,
+  #vainilla,
+  #redvelvet,
+  #carrotcake,
+  #dulcedeleche,
+  #otro,
+  #nata,
+  #oreo,
+  #trufa,
+  #otro2 {
+    width: 28px;
+    height: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
+
+
 }
 
 @media only screen and (orientation: landscape) {
+
+
   .container1 {
     width: 80%;
-    height: 80%;
     margin: 0 auto;
+
   }
 
   .caja {
@@ -203,16 +217,78 @@ textarea {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 0px;
+
     margin: 0px 10px;
 
+  }
+
+  #submit {
+    margin-top: 0px;
+  }
+
+  #title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #description {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  #nombre,
+  #email,
+  #phone {
+    font-size: .6rem;
+    height: 20px;
+  }
+
+  #name-label,
+  #email-label,
+  #phone-label,
+  #tipo-label,
+  #tamaño-label {
+    font-size: .6rem;
+    margin-top: 4px;
+  }
+
+  #dropdown,
+  #dropdown2 {
+    width: 100%;
+    height: 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+
+  }
+
+  #chocolate,
+  #vainilla,
+  #redvelvet,
+  #carrotcake,
+  #dulcedeleche,
+  #otro,
+  #nata,
+  #oreo,
+  #trufa,
+  #otro2 {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: .5rem;
   }
 
   .checkbox1>label {
     margin: 0 5px;
   }
 
+
+
   textarea {
-    margin: 0 20%;
+    margin: 0 16% -10px 16%;
   }
 }
