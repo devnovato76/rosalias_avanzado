@@ -257,6 +257,7 @@ textarea {
   #phone {
     font-size: 1rem;
     height: 20px;
+
   }
 
   #name-label,
@@ -266,19 +267,20 @@ textarea {
   #tamaño-label {
     font-size: 1rem;
     margin-top: 4px;
+    font-weight: bold;
   }
 
   #tamaño-label {
     margin-left: 2px;
     margin-right: 2px;
-    font-weight: bold;
+
 
   }
 
   #tipo-label {
 
     margin-right: 2px;
-    font-weight: bold;
+
 
   }
 
@@ -331,23 +333,23 @@ textarea {
 
 
   [for] {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 
   [for="nata"] {
-    padding-right: 10px;
+    padding-right: 16px;
   }
 
   [for="chocolate"] {
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   [for="oreo"] {
-    padding-right: 25px;
+    padding-right: 35px;
   }
 
   [for="trufa"] {
-    padding-right: 28px;
+    padding-right: 35px;
   }
 
   #comentario_label {
