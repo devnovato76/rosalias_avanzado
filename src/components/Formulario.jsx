@@ -199,7 +199,7 @@ export const Formulario = () => {
               </div>
               <br />
             </div>
-            <label className="comentario" htmlFor="comentario">
+            <label id="comentario_label" htmlFor="comentario">
               Comentario:
             </label>
             <br />
