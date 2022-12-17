@@ -199,8 +199,8 @@ textarea {
 
 
   .contenedor1 {
-    width: 85%;
-    margin: 7% auto;
+    width: 90%;
+    margin: 5% auto;
 
   }
 
@@ -271,12 +271,14 @@ textarea {
   #tamaño-label {
     margin-left: 2px;
     margin-right: 2px;
+    font-weight: bold;
 
   }
 
   #tipo-label {
 
     margin-right: 2px;
+    font-weight: bold;
 
   }
 
@@ -284,7 +286,7 @@ textarea {
   #dropdown2 {
     width: 100%;
     height: 20px;
-    font-size: .75rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     text-align: center;
 
@@ -305,7 +307,7 @@ textarea {
     height: 20px;
     margin-top: 5px;
     margin-bottom: 10px;
-    font-size: .6rem;
+    font-size: .8rem;
   }
 
   .checkbox1>label {
@@ -316,10 +318,12 @@ textarea {
 
   .bizcocho {
     font-size: 1rem;
+    font-weight: bold;
   }
 
   .relleno {
     font-size: 1rem;
+    font-weight: bold;
 
     padding-right: 10px;
   }
@@ -327,7 +331,7 @@ textarea {
 
 
   [for] {
-    font-size: .7rem;
+    font-size: .8rem;
   }
 
   [for="nata"] {
