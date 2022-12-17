@@ -21,10 +21,22 @@
 
 #name-label,
 #email-label,
-#phone-label #tipo-label,
+#phone-label,
+#tipo-label,
 #tamaño-label {
   font-size: 18px;
   margin-top: 8px;
+  font-weight: bold;
+}
+
+#tipo-label,
+#tamaño-label {
+  margin-left: 45%;
+}
+
+.bizcocho,
+.relleno {
+  font-weight: bold;
 }
 
 fieldset {
@@ -125,9 +137,19 @@ textarea {
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .contenedor1 {
+    margin: 0 auto;
     width: 550px;
     min-width: 250px;
 
+  }
+
+  .checkbox1 {
+    margin-left: 35px;
+  }
+
+  .bizcocho,
+  .relleno {
+    margin-left: -40px;
   }
 
   #nombre,
@@ -146,6 +168,37 @@ textarea {
   #dropdown2 {
     width: 520px;
     min-width: 240px;
+
+    height: 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+
+  }
+
+  #chocolate,
+  #vainilla,
+  #redvelvet,
+  #carrotcake,
+  #dulcedeleche,
+  #otro,
+  #nata,
+  #oreo,
+  #trufa,
+  #otro2 {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+
+
+  textarea {
+    margin: 0 8%;
   }
 }
 
@@ -190,6 +243,7 @@ textarea {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 18px;
+    padding-left: 10px;
   }
 
 
@@ -314,6 +368,7 @@ textarea {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: .8rem;
+
   }
 
   .checkbox1>label {
