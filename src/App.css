@@ -61,6 +61,11 @@ h3 {
   transition: all .5s;
 }
 
+#presupuesto {
+  width: 200px;
+
+}
+
 .btn.light {
   color: #FFF;
   border: 2px solid #FFF;

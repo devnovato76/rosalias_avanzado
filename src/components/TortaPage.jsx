@@ -64,7 +64,9 @@ export const TortaPage = () => {
           Regresar
         </button>
         <Link to={"formulario"}>
-          <button>Presupuesto</button>
+          <button id="presupuesto" className="btn btn-outline-primary">
+            Presupuesto
+          </button>
         </Link>
       </div>
     </div>

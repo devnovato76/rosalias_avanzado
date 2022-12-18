@@ -126,7 +126,7 @@ export const Formulario = () => {
             <br />
             <div className="caja">
               {" "}
-              <div className="checkbox1">
+              <div id="bizcocho" className="checkbox1">
                 <label className="bizcocho">Elije un Bizcocho</label>
                 <br />
                 <input
