@@ -393,6 +393,7 @@ textarea {
     width: 100%;
     max-width: 740px;
 
+
   }
 
   #nombre,
@@ -504,9 +505,14 @@ textarea {
 
 
   .contenedor1 {
-    width: 90%;
-    margin: 5% auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
 
+  }
+
+  #description {
+    display: none;
   }
 
   .caja {
@@ -532,11 +538,12 @@ textarea {
   }
 
   #submit {
-    margin: 0px 27%;
+
     margin-bottom: 8px;
     margin-top: -12px;
     height: 12px;
-    width: 46.5%;
+    width: 100%;
+    max-width: 960px;
     font-size: 1.2rem;
     line-height: .3rem;
     letter-spacing: 2px;
@@ -557,13 +564,21 @@ textarea {
   }
 
   .contenedor_dropdown {
-    margin-top: 10px;
+    width: 100%;
+    max-width: 700px;
     display: flex;
+    position: relative;
+    flex-direction: row;
+
+
+
   }
 
   #nombre,
   #email,
   #phone {
+    width: 100%;
+    max-width: 940px;
     font-size: 1rem;
     height: 20px;
 
@@ -572,34 +587,51 @@ textarea {
   #name-label,
   #email-label,
   #phone-label,
-  #tipo-label,
   #tamaño-label {
     font-size: 1rem;
     margin-top: 4px;
     font-weight: bold;
   }
 
-  #tamaño-label {
-    margin-left: 2px;
-    margin-right: 2px;
-
-
-  }
-
   #tipo-label {
-
-    margin-right: 2px;
-
-
+    position: absolute;
+    top: 0px;
+    left: -340px;
   }
+
+  #tamaño-label {
+    position: absolute;
+    top: 8px;
+    left: 75px;
+  }
+
+  #dropdown {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+  }
+
+  #dropdown2 {
+    position: absolute;
+    top: 20px;
+    left: 490px;
+  }
+
+
+
+
+
 
   #dropdown,
   #dropdown2 {
-    width: 100%;
+    width: 55%;
+    max-width: 230px;
     height: 20px;
-    font-size: 1rem;
+    font-size: .8rem;
+    font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
+    margin-left: 5px;
 
 
   }
@@ -669,7 +701,13 @@ textarea {
 
   }
 
+  fieldset {
+    width: 100%;
+    max-width: 980px;
+  }
+
   textarea {
-    margin: 0 27%;
+    width: 100%;
+    max-width: 960px;
   }
 }
