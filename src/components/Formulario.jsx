@@ -116,9 +116,9 @@ export const Formulario = () => {
                 name="tamanio"
                 defaultValue="veinte"
               >
-                <option value="diez">10 Personas Aproximadamente</option>
-                <option value="veinte">20 Personas Aproximadamente</option>
-                <option value="treinta">30 Personas Aproximadamente</option>
+                <option value="diez">10 Personas Aproximado</option>
+                <option value="veinte">20 Personas Aproximado</option>
+                <option value="treinta">30 Personas Aproximado</option>
                 <option value="otro">Otro</option>
               </select>
               <br />
@@ -165,7 +165,7 @@ export const Formulario = () => {
                 <label htmlFor="otro">Otro</label>
                 <br />
               </div>
-              <div className="checkbox1">
+              <div className="checkbox2">
                 {" "}
                 <label className="relleno">Elije un Relleno</label>
                 <br />
