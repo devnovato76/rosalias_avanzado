@@ -339,7 +339,7 @@ textarea {
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
-  .body {
+  /*  .body {
     display: grid;
     place-items: center;
   }
@@ -348,23 +348,17 @@ textarea {
     width: 100%;
     max-width: 470px;
 
-  }
+  }*/
 
-  .checkbox1 {
-    margin-left: 35px;
-  }
 
-  .bizcocho,
+
+  /*.bizcocho,*/
   .relleno {
-    margin-left: -42px;
-
-    font-size: 14px;
-    position: absolute;
-    top: -12px;
-    left: 38px;
+    margin-top: 20px;
+    margin-right: -90px;
   }
 
-  #nombre,
+  /*  #nombre,
   #email,
   #phone {
     width: 100%;
@@ -421,43 +415,50 @@ textarea {
     width: 100%;
     max-width: 442px;
 
-  }
+  }*/
 
   .caja {
-    width: 100%;
-    max-width: 442px;
+
     display: flex;
-    flex-direction: column;
-    margin-left: -30px;
-    margin-top: -20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: -20px;
+
   }
 
   .checkbox1 {
-    position: relative;
-    width: 100%;
-    max-width: 442px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: -10px;
+
   }
 
-  #vainilla {
-    margin-left: -45px;
+  .checkbox2 {
+
+    display: flex;
+    flex-direction: column;
   }
 
-  #nata {
-    margin-left: -45px;
+  [for] {
+    margin-bottom: -10px;
   }
 
 
 
 
-  textarea {
+
+
+  /* textarea {
     margin: 0;
     width: 100%;
     max-width: 440px;
   }
 
-
-
-
+  */
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
