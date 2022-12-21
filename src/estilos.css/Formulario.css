@@ -10,16 +10,19 @@
 }
 
 .body {
+  width: auto;
+  height: 100vh;
   display: grid;
-  place-items: center;
+
 }
 
 .contenedor1 {
   display: flex;
+  align-self: center;
+  justify-self: center;
   flex-direction: column;
-  margin: 20px auto;
-  /*width: 90%;*/
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1200px;
   padding: 10px;
   border-radius: 10px;
   background: rgba(232, 38, 171, 0.3);
@@ -78,7 +81,7 @@
 }
 
 fieldset {
-  max-width: 984px;
+  /*max-width: 984px;*/
   padding: 2px;
   border: 3px solid rgba(255, 255, 255);
   border-radius: 5px;
@@ -94,7 +97,7 @@ fieldset {
 #email,
 #phone {
   width: 100%;
-  max-width: 970px;
+  /*max-width: 970px;*/
   height: 25px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -114,7 +117,7 @@ fieldset {
 #dropdown,
 #dropdown2 {
   width: 100%;
-  max-width: 970px;
+  /*max-width: 970px;*/
   height: 35px;
   font-size: 20px;
   font-weight: bold;
@@ -164,7 +167,7 @@ fieldset {
 
 #submit {
   width: 100%;
-  max-width: 970px;
+  /*max-width: 970px;*/
   background-color: #f72585;
   border: none;
   border-radius: 5px;
@@ -183,13 +186,14 @@ fieldset {
 }
 
 .caja {
-  max-width: 850px;
+  width: auto;
   display: flex;
   flex-direction: column;
 
   justify-content: space-between;
   align-items: baseline;
-  margin: 0 30px;
+  margin-left: 20px;
+  padding-left: 10px;
 
 
 }
@@ -226,7 +230,7 @@ fieldset {
 
 textarea {
   width: 100%;
-  max-width: 970px;
+  /*max-width: 970px;*/
 }
 
 [for] {
