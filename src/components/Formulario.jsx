@@ -48,7 +48,7 @@ export const Formulario = () => {
 
   return (
     <div className="body">
-      <div className="contenedor1">
+      <div id="contenedor1" className="contenedor1" style={{ width: "100%" }}>
         <h1 id="title">PRESUPUESTO</h1>
         <p id="description">Pedido de Presupuesto</p>
         <form id="survey-form" onSubmit={sendEmail}>
@@ -165,7 +165,7 @@ export const Formulario = () => {
                 <label htmlFor="otro">Otro</label>
                 <br />
               </div>
-              <div className="checkbox2">
+              <div id="checkbox2" className="checkbox2">
                 {" "}
                 <label className="relleno">Elije un Relleno</label>
                 <br />

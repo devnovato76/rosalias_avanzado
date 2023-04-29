@@ -4,6 +4,7 @@
 
 .gallery__item {
   position: relative;
+  width: 100%;
 }
 
 .gallery__item:nth-child(7) {
@@ -30,6 +31,7 @@
   height: 100%;
 
   object-fit: cover;
+  object-position: center center;
 }
 
 @media screen and (min-width: 1530px) {
