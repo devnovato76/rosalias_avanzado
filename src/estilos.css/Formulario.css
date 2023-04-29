@@ -11,12 +11,13 @@
 
 .body {
   width: auto;
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
 
 }
 
 .contenedor1 {
+  margin: 8% auto;
   display: flex;
   align-self: center;
   justify-self: center;
@@ -271,42 +272,77 @@ textarea {
 
   .contenedor1 {
     width: 100%;
-    max-width: 460px;
+    margin: 0 auto;
 
   }
 
   .caja {
     width: 100%;
-    max-width: 440px;
+
+    display: flex;
+    flex-direction: row;
+
+
+  }
+
+
+  .checkbox1,
+  .checkbox2 {
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: -30px;
-    margin-top: -20px;
+    justify-items: space-between;
+
+
+
   }
 
-  .checkbox1 {
-    position: relative;
-    width: 100%;
-    max-width: 442px;
+  label.bizcocho {
+    position: absolute;
+    margin-left: -90px;
+    margin-top: -8px;
   }
 
-  .bizcocho,
-  .relleno {
+  label.relleno {
+    position: absolute;
+    margin-right: -230px;
+    margin-top: -30px;
 
+  }
 
-    font-size: 14px;
+  #bizcocho input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+  }
+
+  #checkbox2 input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+
+    /* .relleno {
+
+    display: flex;
+    flex-direction: column;
+    /* font-size: 14px;
     position: absolute;
     top: -20px;
-    left: 80px;
+    left: 80px; */
   }
 
-  #tipo-label,
-  #tamaño-label {
-    margin-bottom: -10px;
+  #checkbox2 #nata {
+    margin-top: -22px;
+  }
+
+  #tipo-label {
+    margin: 10px auto -10px auto;
+    letter-spacing: 1.8px;
   }
 
   #tamaño-label {
-    margin-top: -25px;
+    margin: -15px auto -10px auto;
+    letter-spacing: 1.8px;
   }
 
   #dropdown,
@@ -314,155 +350,188 @@ textarea {
     font-size: 16px;
   }
 
-
-
-  #bizcocho {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 0 2px;
+  label[for] {
+    font-size: 12px;
+    margin: 0 auto;
   }
 
-  #vainilla {
+  /* #bizcocho {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox2 {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  /* #vainilla {
     margin-left: 16px;
   }
 
   #nata {
     margin-left: -20px;
     padding: 0 2px;
-  }
+  } */
 
   textarea {
-    margin: 0;
+    margin: -10px auto 0 auto;
     width: 100%;
-    max-width: 440px;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  /*  .body {
-    display: grid;
-    place-items: center;
+    height: 80px;
+    /* resize: none; */
   }
 
-  .contenedor1 {
-    width: 100%;
-    max-width: 470px;
-
-  }*/
-
-
-
-  /*.bizcocho,*/
-  .relleno {
-    margin-top: 20px;
-    margin-right: -90px;
+  #comentario_label {
+    display: block;
+    margin-top: -40px;
   }
 
-  /*  #nombre,
-  #email,
-  #phone {
-    width: 100%;
-    max-width: 440px;
-  }
-
-  #submit {
-    width: 100%;
-    max-width: 440px;
-  }
-
-  #dropdown,
-  #dropdown2 {
-    width: 100%;
-    max-width: 440px;
-
-    height: 20px;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-align: center;
-
-
-  }
-
-  #chocolate,
-  #vainilla,
-  #redvelvet,
-  #carrotcake,
-  #dulcedeleche,
-  #otro,
-  #nata,
-  #oreo,
-  #trufa,
-  #otro2 {
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+  #submit[type="submit"] {
+    display: block;
     font-size: 10px;
-
-
-  }
-
-  #bizcocho {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  #presupuesto {
-    width: 200px;
-  }
-
-  .contenedor_dropdown {
-    width: 100%;
-    max-width: 442px;
-
-  }*/
-
-  .caja {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-bottom: -20px;
-
-  }
-
-  .checkbox1 {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: -10px;
-
-  }
-
-  .checkbox2 {
-
-    display: flex;
-    flex-direction: column;
-  }
-
-  [for] {
-    margin-bottom: -10px;
+    font-weight: bold;
+    margin-top: -20px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
 
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    #contenedor1 .contenedor1 {
+      width: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 !important;
+
+    }
+
+    .caja {
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+
+
+    }
+
+
+    /*.bizcocho,*/
+    /* .relleno {
+      margin-top: 20px;
+      margin-right: 10px;
+    } */
+
+    #nombre,
+    #email,
+    #phone {
+      width: 100%;
+
+    }
+
+    #submit {
+      width: 100%;
+
+    }
+
+    #dropdown,
+    #dropdown2 {
+      width: 100%;
+      max-width: 440px;
+
+      height: 20px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-align: center;
+
+
+    }
+
+    #chocolate,
+    #vainilla,
+    #redvelvet,
+    #carrotcake,
+    #dulcedeleche,
+    #otro,
+    #nata,
+    #oreo,
+    #trufa,
+    #otro2 {
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 10px;
+
+
+    }
+
+    #bizcocho {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    #presupuesto {
+      width: 200px;
+    }
+
+    .contenedor_dropdown {
+      width: 100%;
+      max-width: 442px;
+
+    }
+
+    .caja {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin-bottom: -20px;
+
+    }
+
+    .checkbox1 {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: -10px;
+
+    }
+
+    .checkbox2 {
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    [for] {
+      margin-bottom: -10px;
+    }
 
 
 
 
-  /* textarea {
+
+
+    /* textarea {
     margin: 0;
     width: 100%;
     max-width: 440px;
   }
 
   */
-}
+  }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-  /* .body {
+  @media screen and (max-width: 1024px) and (min-width: 769px) {
+    /* .body {
     display: grid;
     place-items: center;
   }
@@ -474,7 +543,7 @@ textarea {
 
   }*/
 
-  /* #nombre,
+    /* #nombre,
   #email,
   #phone {
     width: 100%;
@@ -548,21 +617,21 @@ textarea {
     margin-top: -20px;
   }*/
 
-  #name-label,
-  #email-label,
-  #phone-label {
-    display: inline-block;
-  }
+    #name-label,
+    #email-label,
+    #phone-label {
+      display: inline-block;
+    }
 
-  .bizcocho {
-    margin-left: 5px;
-  }
+    .bizcocho {
+      margin-left: 5px;
+    }
 
-  .relleno {
-    margin-left: 5px;
-  }
+    .relleno {
+      margin-left: 5px;
+    }
 
-  /*[for="nata"] {
+    /*[for="nata"] {
     padding-right: 16px;
   }
 
@@ -570,228 +639,229 @@ textarea {
     padding-right: 16px;
   }*/
 
-  [for="redvelvet"] {
-    padding-right: -5px;
-  }
+    [for="redvelvet"] {
+      padding-right: -5px;
+    }
 
-  /*[for="chocolate"] {
+    /*[for="chocolate"] {
     padding-right: 55px;
   }*/
 
-  [for="trufa"] {
-    padding-right: 38px;
-  }
-
-
-}
-
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
-
-
-  .contenedor1 {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-
-  }
-
-  #description {
-    display: none;
-  }
-
-  .caja {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: baseline;
-    /*margin-left: -30px;*/
-    margin-top: -20px;
-    margin-bottom: -10px;
-  }
-
-  .checkbox1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin: 0px 20px;
-    padding: 0 40px;
+    [for="trufa"] {
+      padding-right: 38px;
+    }
 
 
   }
 
-  #submit {
-
-    margin-bottom: 8px;
-    margin-top: -12px;
-    height: 12px;
-    width: 100%;
-    max-width: 960px;
-    font-size: 1.2rem;
-    line-height: .3rem;
-    letter-spacing: 2px;
-
-  }
-
-  #title {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  #description {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 0.8rem;
-    display: none;
-  }
-
-  .contenedor_dropdown {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    position: relative;
-    flex-direction: row;
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : landscape) {
 
 
+    .contenedor1 {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
 
-  }
+    }
 
-  #nombre,
-  #email,
-  #phone {
-    width: 100%;
-    max-width: 940px;
-    font-size: 1rem;
-    height: 20px;
+    #description {
+      display: none;
+    }
 
-  }
+    .caja {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: baseline;
+      /*margin-left: -30px;*/
+      margin-top: -20px;
+      margin-bottom: -10px;
+    }
 
-  #name-label,
-  #email-label,
-  #phone-label,
-  #tamaño-label {
-    font-size: 1rem;
-    margin-top: 4px;
-    font-weight: bold;
-  }
+    .checkbox1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
 
-  #tipo-label {
-    position: absolute;
-    top: 0px;
-    left: -340px;
-  }
+      margin: 0px 20px;
+      padding: 0 40px;
 
-  #tamaño-label {
-    position: absolute;
-    top: 8px;
-    left: 75px;
-  }
 
-  #dropdown {
-    position: absolute;
-    top: 20px;
-    left: 35px;
-  }
+    }
 
-  #dropdown2 {
-    position: absolute;
-    top: 20px;
-    left: 490px;
-  }
+    #submit {
+
+      margin-bottom: 8px;
+      margin-top: -12px;
+      height: 12px;
+      width: 100%;
+      max-width: 960px;
+      font-size: 1.2rem;
+      line-height: .3rem;
+      letter-spacing: 2px;
+
+    }
+
+    #title {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    #description {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.8rem;
+      display: none;
+    }
+
+    .contenedor_dropdown {
+      width: 100%;
+      max-width: 700px;
+      display: flex;
+      position: relative;
+      flex-direction: row;
 
 
 
+    }
+
+    #nombre,
+    #email,
+    #phone {
+      width: 100%;
+      max-width: 940px;
+      font-size: 1rem;
+      height: 20px;
+
+    }
+
+    #name-label,
+    #email-label,
+    #phone-label,
+    #tamaño-label {
+      font-size: 1rem;
+      margin-top: 4px;
+      font-weight: bold;
+    }
+
+    #tipo-label {
+      position: absolute;
+      top: 0px;
+      left: -340px;
+    }
+
+    #tamaño-label {
+      position: absolute;
+      top: 8px;
+      left: 75px;
+    }
+
+    #dropdown {
+      position: absolute;
+      top: 20px;
+      left: 35px;
+    }
+
+    #dropdown2 {
+      position: absolute;
+      top: 20px;
+      left: 490px;
+    }
 
 
 
-  #dropdown,
-  #dropdown2 {
-    width: 100%;
-    max-width: 245px;
-    height: 20px;
-    font-size: .8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-left: 5px;
-
-
-  }
-
-  #chocolate,
-  #vainilla,
-  #redvelvet,
-  #carrotcake,
-  #dulcedeleche,
-  #otro,
-  #nata,
-  #oreo,
-  #trufa,
-  #otro2 {
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: .8rem;
-
-  }
-
-  .checkbox1>label {
-    margin: 0 5px;
-  }
 
 
 
-  .bizcocho {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .relleno {
-    font-size: 1rem;
-    font-weight: bold;
-
-    padding-right: 10px;
-  }
-
+    #dropdown,
+    #dropdown2 {
+      width: 100%;
+      max-width: 245px;
+      height: 20px;
+      font-size: .8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: 5px;
 
 
-  [for] {
-    font-size: .9rem;
-  }
+    }
 
-  [for="nata"] {
-    padding-right: 16px;
-  }
+    #chocolate,
+    #vainilla,
+    #redvelvet,
+    #carrotcake,
+    #dulcedeleche,
+    #otro,
+    #nata,
+    #oreo,
+    #trufa,
+    #otro2 {
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: .8rem;
 
-  [for="chocolate"] {
-    padding-right: 35px;
-  }
+    }
 
-  [for="oreo"] {
-    padding-right: 35px;
-  }
+    .checkbox1>label {
+      margin: 0 5px;
+    }
 
-  [for="trufa"] {
-    padding-right: 35px;
-  }
 
-  #comentario_label {
-    font-size: .8rem;
-    font-weight: bold;
-    margin-left: 27%;
 
-  }
+    .bizcocho {
+      font-size: 1rem;
+      font-weight: bold;
+    }
 
-  fieldset {
-    width: 100%;
-    max-width: 980px;
-  }
+    .relleno {
+      font-size: 1rem;
+      font-weight: bold;
 
-  textarea {
-    width: 100%;
-    max-width: 960px;
+      padding-right: 10px;
+    }
+
+
+
+    [for] {
+      font-size: .9rem;
+    }
+
+    [for="nata"] {
+      padding-right: 16px;
+    }
+
+    [for="chocolate"] {
+      padding-right: 35px;
+    }
+
+    [for="oreo"] {
+      padding-right: 35px;
+    }
+
+    [for="trufa"] {
+      padding-right: 35px;
+    }
+
+    #comentario_label {
+      font-size: .8rem;
+      font-weight: bold;
+      margin-left: 27%;
+
+    }
+
+    fieldset {
+      width: 100%;
+      max-width: 980px;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 960px;
+    }
   }
 }

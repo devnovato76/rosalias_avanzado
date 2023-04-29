@@ -12,7 +12,7 @@ export const TortaItem = ({
   pisos,
   cubierta,
 }) => {
-  const tortaImageUrl = `assets/tortas/${id}.jpg`;
+  const tortaImageUrl = `../public/assetsPublicos/assets/tortas/${id}.jpg`;
   return (
     <>
       <div className="gallery__item">
