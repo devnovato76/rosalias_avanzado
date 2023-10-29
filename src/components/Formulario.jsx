@@ -54,7 +54,7 @@ export const Formulario = () => {
         <form id="survey-form" onSubmit={sendEmail}>
           <fieldset>
             <label id="name-label" htmlFor="nombre">
-              Nombre
+              Nombre:
             </label>
             <br />
             <input
@@ -105,7 +105,9 @@ export const Formulario = () => {
                 <option value="pastelitos">Pastelitos</option>
               </select>
               <br />
-              <br />
+            </div>
+            <div className="contenedor_dropdown2">
+              {/* <br /> */}
               <label id="tamaño-label" htmlFor="tamanio">
                 Tamaño
               </label>

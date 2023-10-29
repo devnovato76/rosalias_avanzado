@@ -1,9 +1,20 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
 .body {
-  width: 40%;
+  width: 55%;
   height: 90vh;
+
   margin: 5vh auto;
   background: #df5897;
   font-family: var(--font-principal);
+  font-size: 1.4rem;
   border-radius: 10px;
 }
 
@@ -15,4 +26,159 @@
   color: white;
   font-family: var(--font-principal);
   margin-left: 20px;
+}
+
+#name-label,
+#email-label,
+#phone-label {
+  color: white;
+  font-family: var(--font-principal);
+  margin-left: 10px;
+
+
+}
+
+fieldset {
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+}
+
+#nombre,
+#phone,
+#email {
+  margin: 0 10%;
+  width: 80%;
+  font-size: 1.2rem;
+  ;
+}
+
+.contenedor_dropdown {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 1.2rem;
+  justify-content: space-between;
+
+}
+
+.contenedor_dropdown2 {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 1.2rem;
+  justify-content: space-between;
+
+}
+
+.contenedor_dropdown #dropdown {
+  width: 65%;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-family: var(--font-principal);
+
+}
+
+.contenedor_dropdown2 #dropdown2 {
+  width: 65%;
+  margin: 10px 20px 10px 0px;
+  font-size: 1.2rem;
+  font-family: var(--font-principal);
+
+}
+
+
+#tipo-label,
+#tamaño-label {
+  color: white;
+  margin: 10px;
+  font-family: var(--font-principal);
+  font-size: 1.4rem;
+}
+
+div #bizcocho.checkbox1 {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 1%; */
+  flex: 1 1 auto;
+  /* margin: 0px auto 10px auto; */
+  color: white;
+  font-family: var(--font-principal);
+
+}
+
+div #checkbox2.checkbox2 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 1%; */
+  flex: 1 1 auto;
+  color: white;
+  font-family: var(--font-principal);
+
+}
+
+div #checkbox2.checkbox2 label.relleno {
+  color: white;
+  font-family: var(--font-principal);
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+div #bizcocho.checkbox1 label.bizcocho {
+  color: white;
+  font-family: var(--font-principal);
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+div #bizcocho.checkbox1 label[for] {
+  color: white;
+  font-family: var(--font-principal);
+  font-size: 1.3rem;
+}
+
+div #checkbox2.checkbox2 label[for] {
+  color: white;
+  font-family: var(--font-principal);
+  font-size: 1.3rem;
+}
+
+
+
+div.caja {
+  color: white;
+  font-family: var(--font-principal);
+  font-size: 1rem;
+}
+
+#comentario_label {
+  color: white;
+  font-family: var(--font-principal);
+  margin-left: 5px;
+}
+
+#comentario {
+  width: 90%;
+  margin: 0 0 -15px 5px;
+}
+
+#submit {
+
+  color: #df5897;
+  font-family: var(--font-principal);
+  font-weight: bold;
+  width: 50%;
+  margin: 0px 25% 15px 25%;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background: #df5897;
+  color: white;
+  font-family: var(--font-principal);
+  font-weight: bold;
+  border: 1px solid #eee;
+
 }
